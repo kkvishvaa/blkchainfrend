@@ -1,0 +1,116 @@
+/* Background gradient */
+.bg-gradient {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  border-bottom: 2px solid #fff;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.4s ease-in-out;
+  padding: 0.8rem 1rem;
+  background: rgba(13, 110, 253, 0.95); /* Light blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+}
+
+/* Expanded Navbar */
+.navbar.expanded {
+  padding: 2rem 1rem; /* Taller padding when expanded */
+  background: linear-gradient(90deg, #0d6efd, #6610f2); /* Dynamic gradient */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Larger navbar brand when expanded */
+.navbar.expanded .navbar-brand {
+  font-size: 2.2rem; /* Bigger brand when expanded */
+  letter-spacing: 2px;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+.nav-link::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #ffcc00;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Hover effect on navbar toggler */
+.navbar-toggler:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Navbar (on small screens) */
+@media (max-width: 992px) {
+  .navbar {
+    opacity: 1; /* Make navbar more visible on small screens */
+    background: rgba(13, 110, 253, 0.95); /* Use a transparent blue for smaller screens */
+  }
+  
+  .navbar-toggler {
+    display: block; /* Ensure toggler is visible */
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9); /* Add background to collapsed navbar */
+  }
+
+  .nav-link {
+    font-size: 1.2rem; /* Increase font size on small screens */
+    padding: 1rem 0;
+  }
+}
+
+/* On large screens, hide navbar toggler */
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Keep font size normal for larger screens */
+    margin-right: 1.5rem; /* Space between nav items */
+  }
+}

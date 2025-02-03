@@ -1,0 +1,47 @@
+ /* Card Styling */
+ .bgcont{
+    background: linear-gradient(45deg, #112378, #c9b977, #9191bb);
+
+      padding: 20px;
+      border-radius: 20px;
+      opacity: 0.9;
+      
+     
+  }
+ .feature-card {
+    font-size: 1rem;
+     font-weight: 700;
+   padding: 30px;
+   border-radius: 10px;
+   background-color: #ffffff;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   margin-bottom: 20px;
+   opacity: 0.8;
+ }
+
+ .feature-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ .feature-card h4 {
+   color: #ffcc00;
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin-bottom: 15px;
+ }
+
+ .feature-card p {
+   font-size: 1.2rem;
+   color: #555;
+ }
+
+ .icon-container {
+   margin-bottom: 15px;
+ }
+
+ .icon-container i {
+   font-size: 3rem;
+   color: #6c757d;
+ }

@@ -1,0 +1,37 @@
+/* Footer Styling */
+.footer {
+    background: linear-gradient(145deg, #6c757d, #495057);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+
+  .footer a:hover {
+    color: #ffc107;
+  }
+
+  .footer .social-icons {
+    margin-top: 20px;
+  }
+
+  .footer .social-icons a {
+    font-size: 24px;
+    margin: 0 15px;
+  }
+
+  .footer .social-icons a:hover {
+    color: #ffc107;
+  }
+
+  .footer p {
+    margin-top: 20px;
+    font-size: 1rem;
+  }

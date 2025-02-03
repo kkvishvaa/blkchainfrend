@@ -1,0 +1,42 @@
+ /* Hero Section Styling */
+ .hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Background Video Styling */
+  .hero-section video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out smooth;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(202, 218, 201);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffcc00;
+  }
